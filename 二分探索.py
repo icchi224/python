@@ -15,7 +15,7 @@ def binary_search(lst, x):
     ac = 0
     wa = len(lst)
     while ac + 1 < wa:
-        print(ac, wa)
+        #print(ac, wa)
         mid = (ac + wa) // 2
         if lst[mid] < x:
             ac = mid
@@ -23,8 +23,8 @@ def binary_search(lst, x):
             wa = mid
     return ac
 
-N, x = 5, 4
-A = [1, 3, 9, 30, 100]
+N, x = 1000, 13
+A = [2, 3, 5, 7, 11, 13]
 ans1 = bsct(A,x) - 1
 ans2 = binary_search(A, x)
 print(ans1)
